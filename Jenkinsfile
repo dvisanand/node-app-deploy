@@ -20,7 +20,7 @@ pipeline {
     //}
     stage('Create Packer AMI') {
         steps {
-            sh 'packer build 2tor4me-ami.json'
+            sh 'packer build pkr-2tor4me-ami.json'
       }
     }
     stage('EC2 APP Deployment') {
