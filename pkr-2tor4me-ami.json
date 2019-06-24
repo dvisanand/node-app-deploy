@@ -34,7 +34,7 @@
 		
 	  "type": "shell",
 	  "execute_command": "echo '{{user `ssh_pass`}}' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'",
-	  "script": "./pkr-prov.sh"
+	  "script": "./conf/pkr-prov.sh"
 	}
     ]
 }
